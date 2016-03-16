@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" media="all" href="../fonts/fontAwesome/font-awesome.min.css">
+    <link rel="stylesheet" media="all" href="../fonts/iranianSans/iranianSans.css">
+    <link rel="stylesheet" media="all" href="../css/custom.css">
+    <link rel="stylesheet" media="all" href="../css/addons.css">
+    <link rel="stylesheet" media="all" href="../css/brand-colors.latest.min.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/custom.js"></script>
+    <title>Foodila</title>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row foodilaLogo">
+        <div class="navbar-brand">
+            <a class="navbar-brand" href="#">Foodila</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="jumbotron">
+            <div class="container text-center ">
+                <h1>فودیلا</h1>
+
+                <p><input class="input-sm" placeholder="جستجو در فودیلا..." type="text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <nav class="navbar navbar-default">
+            <div class="nav navbar-nav">
+                <ul>
+                    <li class="active"><a href="#"><span class="fa fa-home"></span> فودیلا</a></li>
+                    <li class="active"><a href="#"><span class="fa fa-navicon"></span> نزدیک من</a></li>
+                    <li class="active"><a href="#"><span class="fa fa-tag"></span> ویژه امروز</a></li>
+                    <li id="order-food-link" class="active"><a href="#"><span class="fa fa-shopping-basket"></span> سبد
+                        سفارش</a></li>
+                    <li class="active"><a href="#"><span class="fa fa-user"></span>کاربران</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="row" id="order-food-row">
+        <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+            <div id="order-food">
+                <div id="order-food-title"><span class="fa fa-close fa-2x "></span><span> سبد سفارش</span></div>
+                <div id="login">
+                    <div class="login-intro">
+                        <h6>با ایجاد حساب کاربری و استفاده از آن از تخفیفات
+                        و چشنواره های ویژه فودیلا برخوردار شوید.</h6>
+                        <h6>ورود کاربران</h6>
+                    </div>
+                    <div class="login-form">
+                        <div class="username">
+                            <span class="fa fa-user"></span>
+                            <input type="text" placeholder="نام کاربری...">
+                        </div>
+                        <div class="password">
+                            <span class="fa fa-bell-slash"></span>
+                            <input type="password" placeholder="رمز عبور">
+                        </div>
+                        <div>
+                            <button class="btn btn-login">ورود</button>
+                        </div>
+                        <span class="not-member"><h6>کاربر فودیلا نیستید؟</h6></span>
+                        <div><button class="btn btn-not-member">سفارش به عنوان کاربر مهمان</button></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+
+        $("#order-food-link").click(function () {
+            $("#order-food").css('visibility', 'hidden');
+        });
+    });
+</script>
+</body>
+</html>

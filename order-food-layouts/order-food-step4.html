@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" media="all" href="../fonts/fontAwesome/font-awesome.min.css">
+    <link rel="stylesheet" media="all" href="../fonts/iranianSans/iranianSans.css">
+    <link rel="stylesheet" media="all" href="../css/custom.css">
+    <link rel="stylesheet" media="all" href="../css/addons.css">
+    <link rel="stylesheet" media="all" href="../css/brand-colors.latest.min.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/custom.js"></script>
+    <title>Foodila</title>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row foodilaLogo">
+        <div class="navbar-brand">
+            <a class="navbar-brand" href="#">Foodila</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="jumbotron">
+            <div class="container text-center ">
+                <h1>فودیلا</h1>
+
+                <p><input class="input-sm" placeholder="جستجو در فودیلا..." type="text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <nav class="navbar navbar-default">
+            <div class="nav navbar-nav">
+                <ul>
+                    <li class="active"><a href="#"><span class="fa fa-home"></span> فودیلا</a></li>
+                    <li class="active"><a href="#"><span class="fa fa-navicon"></span> نزدیک من</a></li>
+                    <li class="active"><a href="#"><span class="fa fa-tag"></span> ویژه امروز</a></li>
+                    <li id="order-food-link" class="active"><a href="#"><span class="fa fa-shopping-basket"></span> سبد
+                        سفارش</a></li>
+                    <li class="active"><a href="#"><span class="fa fa-user"></span>کاربران</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="row" id="order-food-row">
+        <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+            <div id="order-food">
+                <div id="order-food-title"><span class="fa fa-close fa-2x "></span><span> سبد سفارش</span></div>
+                <div id="payment">
+                    <div class="title">
+                        <span>کاربر گرامی</span>
+                        <span>سید محمد نجفی</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">1</div>
+                        <div class="col-xs-4">3</div>
+                        <div class="col-xs-4">2</div>
+                    </div>
+                    <div class="address">
+                        <h6>به کدام آدرس ارسال شود؟</h6>
+
+                        <form>
+                            <input type="radio" name="gender" value="male" checked> ادرس اول<br>
+                            <input type="radio" name="gender" value="female"> آدرس دوم<br>
+                        </form>
+
+
+                        <div class="payment-type">
+                            <span>نحوه پرداخت</span>
+                            <button class="btn">آنلاین</button>
+                            <button class="btn">در محل</button>
+                        </div>
+                    </div>
+                    <div class="title">از فودی بن ها برای اعمال تخفیف استفاده کنید.</div>
+                    <div class="foodila-copon">
+                           <span >
+                               <span class="highlight">18</span>
+                               <span>فودی بن</span>
+                           </span>
+                        =
+                        <sapn>
+                            <span class="highlight">1/800</span>
+                            <span>تومان</span>
+                        </sapn>
+                    </div>
+                    <div class="foodila-copon-btn">
+                        <button class="btn">استفاده از فودی بن</button>
+                    </div>
+                    <div class="payment-price">
+                        <span>مبلغ این فاکتور:</span>
+                        <span>82/000</span>
+                        <span>تومان</span>
+
+                    <div>
+                        <span>تخفیف فودی بن:</span>
+                        <span>1/800</span>
+                        <span>تومان</span>
+                    </div>
+                    </div>
+                    <div class="payment-price-btn">
+                        <button class="btn ">پرداخت</button>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+
+        $("#order-food-link").click(function () {
+            $("#order-food").css('visibility', 'hidden');
+        });
+    });
+</script>
+</body>
+</html>
