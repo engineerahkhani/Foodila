@@ -77,18 +77,21 @@ img {
     text-align: center;
     font-size: 18px;
 }
-.fixed-top{
+
+.fixed-top {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
 }
-.fixed-bottom{
+
+.fixed-bottom {
     position: fixed;
     bottom: 3px;
     left: 0;
     z-index: 100;
 }
+
 /*
 *nav bar section
 */
@@ -147,8 +150,9 @@ nav ul a:hover {
 nav ul li .fa {
     margin-right: 2px;
 }
+
 /*nav ul #order-food-link:hover #order-food   {*/
-    /*background-color: #cc0000;*/
+/*background-color: #cc0000;*/
 /*}*/
 
 .jumbotron {
@@ -269,8 +273,9 @@ nav ul li .fa {
     text-align: center;
     margin-top: 8px;
 }
+
 #restorans-row .repeat-restoran {
-   margin-top: 3px;
+    margin-top: 3px;
 }
 
 #restorans-row .restoran {
@@ -295,68 +300,81 @@ nav ul li .fa {
 #restorans-row .restoran .restoran-size {
     display: inline-block;
 }
+
 /*
 * order-food page
 */
 
-#order-food{
+#order-food {
     visibility: visible;
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     width: auto;
-    height:100vh ;
+    height: 100vh;
 
     background-color: #f7f7f7;
 
 }
-#order-food #order-food-title{
+
+#order-food #order-food-title {
     direction: rtl;
-    background-color:#cc342d;
+    background-color: #cc342d;
     color: white;
     padding: 10px;
     text-align: center;
 }
-#order-food #order-food-title span:first-child{
+
+#order-food #order-food-title span:first-child {
     float: right;
-  }
-#order-food .food-order-items-repeat{
+}
+
+#order-food .food-order-items-repeat {
     text-align: center;
 }
-.food-order-items-repeat .food-order-items-img{
-display: inline-block;
+
+.food-order-items-repeat .food-order-items-img {
+    display: inline-block;
 }
-.food-order-items-repeat .food-order-items-img img{
+
+.food-order-items-repeat .food-order-items-img img {
     width: 80px;
     height: 80px;
     border-radius: 5px;
     border: 1px solid #c0c0c8;
 }
-.food-order-items-repeat .food-order-items-intro{
+
+.food-order-items-repeat .food-order-items-intro {
     display: inline-block;
     font-size: small;
 
-}.food-order-items-repeat .food-order-items-number{
+}
+
+.food-order-items-repeat .food-order-items-number {
     display: inline-block;
     direction: rtl;
-     margin-right: 30px;
+    margin-right: 30px;
 
 }
-#order-food .food-order-sum{
+
+#order-food .food-order-sum {
     border: 1px solid #c0c0c8;
     padding: 5px;
 
 }
-#order-food .food-order-sum div span{
+
+#order-food .food-order-sum div span {
     margin-right: 5px;
 }
-#order-food .food-order-sum div span:nth-child(2){
+
+#order-food .food-order-sum div span:nth-child(2) {
     font-size: medium;
     font-weight: bold;
     color: #2d3277;
     text-decoration: underline;
 }
-#order-food .food-order-sum button{
+
+#order-food .food-order-sum button {
     background-color: green;
     color: #fff;
     border: 3px;
@@ -364,44 +382,54 @@ display: inline-block;
     margin-top: 8px;
     font-size: small;
 }
+
 /*
 *order food step 2
 */
-#suggest{
+#suggest {
 }
-#suggest h6{
+
+#suggest h6 {
     text-align: center;
     padding: 3px 7px 0px 3px;
     font-size: small;
     font-weight: lighter;
     line-height: 0.2;
 }
-#suggest .suggest-row{
+
+#suggest .suggest-row {
     max-width: 360px;
     white-space: nowrap;
     overflow-y: hidden;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
 }
-#suggest .suggest-row .suggest-items{
+
+#suggest .suggest-row .suggest-items {
     position: relative;
     display: table-cell;
     border: none;
 }
-#suggest .suggest-row .suggest-items a{
+
+#suggest .suggest-row .suggest-items a {
     text-decoration: none;
     color: inherit;
 }
-#suggest .suggest-row .suggest-items a:hover{
+
+#suggest .suggest-row .suggest-items a:hover {
     text-decoration: none;
     color: inherit;
 }
-#suggest .suggest-row .suggest-items .suggest-item-img{}
-#suggest .suggest-row .suggest-items .suggest-item-img img{
+
+#suggest .suggest-row .suggest-items .suggest-item-img {
+}
+
+#suggest .suggest-row .suggest-items .suggest-item-img img {
     width: 90px;
     height: 90px;
 }
-#suggest .suggest-row .suggest-item .suggest-item-title{
+
+#suggest .suggest-row .suggest-item .suggest-item-title {
     position: absolute;
     top: 58px;
     right: 25px;
@@ -411,32 +439,75 @@ display: inline-block;
     background-color: rgba(0, 0, 0, 0.8);
     font-size: xx-small;
 }
-#suggest .suggest-row .suggest-items .suggest-item-price{
+
+#suggest .suggest-row .suggest-items .suggest-item-price {
     direction: rtl;
     font-size: x-small;
-    background-color:#cc342d ;
-    color:#fff;
+    background-color: #cc342d;
+    color: #fff;
     padding: 3px 5px;
 }
+
 /*
 * order food-step 3
 */
-#login{
+#login {
     max-width: 360px;
 }
-#login .login-intro{
+
+#login .login-intro {
     direction: rtl;
     text-align: justify;
     padding: 10px 20px 2px 20px;
 }
-#login .login-intro h6:last-child{
+
+#login .login-intro h6:last-child {
     text-align: center;
-    color:#a3a3a3;
+    color: #a3a3a3;
 }
-#login .login-form{
+
+#login .login-form {
     text-align: center;
 }
-#login .login-form .btn{
+
+#login .login-form p {
+    color: #fff;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#login .login-form p.user-input {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 5px;
+    margin: 5px 10%;
+    padding: 0;
+    /*width: 40%;*/
+    color: white;
+    line-height: 30px;
+    display: inline-block;
+
+}
+
+#login .login-form p.user-input input {
+    background: none repeat scroll 0 0 #fff;
+    border: medium none;
+    color: #fff !important;
+    width: 90%;
+}
+
+#login .login-form p.user-input span > input {
+    margin: 0 3px 0 0 !important;
+    padding: 0 10px 0 5px !important;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+}
+
+#login .login-form .btn {
     width: 100%;
     color: #fff;
     border: 3px;
@@ -444,94 +515,159 @@ display: inline-block;
     margin-top: 8px;
     font-size: small;
 }
-#login .login-form .btn-login{
+
+#login .login-form .btn-login {
     background-color: green;
 }
-#login .login-form .btn-not-member{
+
+#login .login-form .btn-not-member {
 
     background-color: dodgerblue;
 
 }
-#login .login-form input{
+
+#login .login-form input {
     direction: rtl;
     font-size: x-small;
     width: 90%;
 }
-#login .login-form .username{}
-#login .login-form .username  .fa{
+
+#login .login-form .username {
+}
+
+#login .login-form .username .fa {
     color: #cccccc;
 
 }
 
-#login .login-form .password{}
-#login .login-form .password .fa{
+#login .login-form .password {
+}
+
+#login .login-form .password .fa {
     color: #cccccc;
 
 }
-#login .login-form .not-member{
+
+#login .login-form .not-member {
     margin: 0;
     line-height: 0;
-    padding-top:20px;
-
+    padding-top: 20px;
 
 }
+
 /*
 *order food step 4
 */
-#payment{}
-#payment .title{
+#payment {
+}
+
+#payment .title {
     direction: rtl;
     text-align: justify;
-    padding: 10px 20px 2px 20px;}
-#payment .title span:last-child{
-    color: #2d3277;
-}
-#payment .address{
-    direction: rtl;
-    text-align: center;
-}
-#payment .address h6{
-    direction: rtl;
-    text-align: center;
-    color:#313335;
     padding: 10px 20px 2px 20px;
 }
-#payment .address form{
+
+#payment .title span:last-child {
+    color: #2d3277;
+}
+
+#payment .progressbar {
+
+}
+
+#payment .progressbar div {
+    display: block;
+}
+
+#payment .progressbar .wrap {
+
+}
+
+#payment .progressbar .wrap .progress-radial {
+    /* float: left; */
+    margin-right: 30px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* border: 2px solid #2f3439; */
+    background-color: #569A08;
+}
+
+#payment .progressbar .wrap .progress-25 {
+    background-image: linear-gradient(90deg, #569A08 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(180deg, #569A08 50%, #569A08 50%, #569A08);
+}
+
+#payment .progressbar .wrap .progress-radial .overlay {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+}
+
+#payment .address {
+    direction: rtl;
+    text-align: center;
+}
+
+#payment .address h6 {
+    direction: rtl;
+    text-align: center;
+    color: #313335;
+    padding: 10px 20px 2px 20px;
+}
+
+#payment .address form {
     padding: 8px 3px;
 }
-#payment .address form input{
-    color:#a3a3a3;
+
+#payment .address form input {
+    color: #a3a3a3;
 
 }
-#payment .payment-type span{
+
+#payment .payment-type span {
 
 }
-#payment .payment-type .btn{
+
+#payment .payment-type .btn {
     color: #fff;
     border: 3px;
     padding: 10px 25px;
     font-size: small;
 }
+
 #payment .payment-type button:active {
     background-color: green;
 }
-#payment .foodila-copon{
-direction: rtl;
+
+#payment .foodila-copon {
+    direction: rtl;
     text-align: center;
 }
-#payment .foodila-copon span span:first-child{
-color:#2d3277;
+
+#payment .foodila-copon span span:first-child {
+    color: #2d3277;
 }
-#payment .foodila-copon .highlight{
+
+#payment .foodila-copon .highlight {
     font-size: medium;
     font-weight: bold;
     color: #2d3277;
     text-decoration: underline;
 }
-#payment .foodila-copon-btn{
+
+#payment .foodila-copon-btn {
     text-align: center;
 }
-#payment .foodila-copon-btn .btn{
+
+#payment .foodila-copon-btn .btn {
     color: #fff;
     background-color: green;
     border-radius: 5px;
@@ -539,17 +675,190 @@ color:#2d3277;
     padding: 5px 10px;
     font-size: small;
 }
-#payment .payment-price{
+
+#payment .payment-price {
     text-align: center;
 }
-#payment .payment-price span{
+
+#payment .payment-price span {
     margin-right: 5px;
 }
-#payment .payment-price-btn button{
+
+#payment .payment-price-btn button {
     width: 99%;
     color: #fff;
     background-color: limegreen;
     border: none;
     padding: 10px 20px;
     font-size: small;
+}
+
+/*
+*order food step11
+*/
+#register {
+    max-width: 360px;
+}
+
+#register .register-form {
+    text-align: center;
+}
+
+#register .register-form textarea {
+    border: medium none;
+    direction: rtl;
+}
+
+#register .register-form .fa {
+    color: #ccc;
+}
+
+#register .register-form p {
+    color: #fff;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#register .register-form p.user-input {
+    background: none repeat scroll 0 0 #fff;
+    margin: 5px 10%;
+    padding: 0;
+    /*width: 40%;*/
+    color: white;
+    line-height: 30px;
+    display: inline-block;
+
+}
+
+#register .register-form p.user-input input {
+    background: none repeat scroll 0 0 #fff;
+    border: medium none;
+    color: #fff !important;
+    width: 90%;
+}
+
+#register .register-form p.user-input span > input {
+    margin: 0 3px 0 0 !important;
+    padding: 0 10px 0 5px !important;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+}
+
+#register .register-form .btn {
+    color: #fff;
+    border: 3px;
+    padding: 10px 25px;
+    margin-top: 8px;
+    font-size: small;
+}
+
+#register .register-form .checkbox {
+    font-size: small;
+    direction: rtl;
+    text-align: left;
+    width: auto;
+}
+
+#register .register-form .btn-payment {
+    width: 99%;
+    background-color: limegreen;
+
+}
+
+#register .register-form form {
+    float: right;
+    clear: both;
+}
+
+#register .register-form input {
+    direction: rtl;
+    font-size: x-small;
+    /*width: 90%;*/
+}
+
+/*
+*logged in page
+*/
+#logged-in {
+
+}
+
+#logged-in-tab {
+
+}
+/*
+  If you don't want the animation remove the commented properties.
+
+Thank you
+*/
+
+#logged-in-tab{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:tahoma;
+}
+#logged-in-tab a{
+    text-decoration:none;
+}
+#logged-in-tab .clear{
+    clear:both;
+}
+#logged-in-tab nav{
+    text-align: center;
+}
+#logged-in-tab nav a{
+    display:inline-block;
+    width:25%;
+    height:30px;
+    float:right;
+    line-height:30px;
+    background-color:#fff;
+    color:#ccc;
+    font-size:13px;
+    text-align:center;
+    border:1px solid #000;
+    border-radius: 7px 7px 0 0 ;
+
+}
+#logged-in-tab nav a:first-child{
+
+}
+#logged-in-tab nav a:last-child{
+    border:none;
+    margin-right: 0px;
+}
+#logged-in-tab .tabContainer{
+    text-align:center;
+    position:relative;
+}
+#logged-in-tab .Tabcondent{
+    position:absolute;
+    width:50%;
+    background-color:#f7f7f7;
+    color:#ccc;
+    text-align:center;
+    opacity:0;
+    right:0;
+    top:0;
+    bottom:0;
+    transition:all ease-in-out 0.3s;
+    /* display:none; */
+}
+#logged-in-tab a.active{
+    background-color:#00a100;
+}
+#logged-in-tab .Tabcondent.active{
+    width:100%;
+    height:100%;
+    opacity:1;
+    border-radius:0px;
+    transition:all ease-in-out 0.6s;
+    margin:0 auto;
+    /* display:block */
 }

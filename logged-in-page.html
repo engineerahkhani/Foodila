@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" media="all" href="fonts/fontAwesome/font-awesome.min.css">
+    <link rel="stylesheet" media="all" href="fonts/iranianSans/iranianSans.css">
+    <link rel="stylesheet" media="all" href="css/custom.css">
+    <link rel="stylesheet" media="all" href="css/addons.css">
+    <link rel="stylesheet" media="all" href="css/brand-colors.latest.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/custom.js"></script>
+    <title>Foodila</title>
+</head>
+<body>
+<div class="container">
+    <div class="row foodilaLogo">
+        <div class="navbar-brand">
+            <a class="navbar-brand" href="#">Foodila</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="jumbotron">
+            <div class="container text-center ">
+                <h1>فودیلا</h1>
+
+                <p><input class="input-sm" placeholder="جستجو در فودیلا..." type="text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <nav class="navbar navbar-default">
+            <div class="nav navbar-nav">
+                <ul>
+                    <li class="active"><a href="#"><span class="fa fa-home"></span> فودیلا</a></li>
+                    <li class="active"><a href="#"><span class="fa fa-navicon"></span> نزدیک من</a></li>
+                    <li class="active"><a href="#"><span class="fa fa-tag"></span> ویژه امروز</a></li>
+                    <li class="active"><a href="#"><span class="fa fa-shopping-basket"></span> سبد سفارش</a></li>
+                    <li class="active"><a href="#"><span class="fa fa-user"></span>کاربران</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+<div class="row" id="logged-in">
+    <div>
+        <span>
+            کاربر گرامی:
+        </span>
+        <span>
+            سید محمد نجفی
+        </span>
+    </div>
+    <div>
+        <p>خلاصه وضعیت کاربری شما</p>
+    </div>
+    <div>
+        foodi bon sec and ...
+    </div>
+    <div id="logged-in-tab">
+        <nav>
+            <a href="javascript:void(0);" data-tab="one" class="active"><span>تاریخچه سفارشات شما</span></a>
+            <a href="javascript:void(0);" data-tab="two"><span>سبد علاقمندی ها</span></a>
+            <a href="javascript:void(0);" data-tab="three"><span>تغییر مشخصات کاربری</span></a>
+            <a href="javascript:void(0);" data-tab="four"><span>پشتیبانی</span></a>
+            <div class="clear"></div>
+        </nav>
+
+        <div class="tabContainer">
+            <div id="one" class="Tabcondent active">
+                <!--tarikhche sefareshat shoma-->
+                <div class="row">
+                    <div class="col-xs-4">
+                        <span class="fa fa-chevron-left"></span>
+                        <span>مبلغ خرید</span>
+                        <span>14/000</span>
+                        <span>تومان</span>
+
+                    </div>
+                    <div class="col-xs-4">
+                        <span>تاریخ خرید</span>
+                        <span>1395/01/01</span>
+                    </div>
+                    <div class="col-xs-4"><span class="fa fa-2x fa-ship"></span></div>
+                </div>
+            </div>
+            <div id="two" class="Tabcondent">
+                <!--sabad alaghemandiha-->
+                <div class="row">
+                    <div class="col-xs-3"><span class="fa fa-close"></span></div>
+                    <div class="col-xs-3"><span>رستوران شاندیز</span></div>
+                    <div class="col-xs-3"><span>ماهیچه مخصوص</span></div>
+                    <div class="col-xs-3"><img src="img/img4.gif" width="90px" height="90px"></div>
+                </div>
+            </div>
+            <div id="three" class="Tabcondent">
+                <div>
+                    <div>
+                        <span>نام و نام خانوادگی:</span>
+                        <span>سید محمد نجفی</span>
+                    </div>
+                <div>
+                        <span>شماره تلفن همراه</span>
+                        <span>091925865744</span>
+                    </div>
+                <div>
+                        <span>شماره تلفن ثابت</span>
+                        <span>0253475845</span>
+                    </div>
+                <div>
+                        <span>آدرس 1:</span>
+                        <span>قم - بلوار نیایش - پلاک4 - واحد 3</span>
+                </div>
+                    <div>
+                        <button>تغییر کلمه عبور</button>
+                    </div>
+                    <div>
+                        <button>اضافه نمودن آدرس جدید</button>
+                    </div>
+                </div>
+            </div>
+            <div id="four" class="Tabcondent">Tab Four</div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    $(function(){
+        $('#logged-in-tab nav a').click(function(){
+            var tabId = $(this).attr('data-tab');
+
+            $('#logged-in-tab nav a').removeClass('active');
+            $('.Tabcondent').removeClass('active');
+
+            $(this).addClass('active');
+            $('#'+tabId).addClass('active');
+        });
+
+    });
+</script>
+</body>
+</html>
